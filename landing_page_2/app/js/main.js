@@ -1,0 +1,2 @@
+console.log('Website curated by Josephine Baird for GP Advertising Junior Digital Designer test. All assets were provided by GP.');
+console.log('Thanks for giving me the opportunity to work on this! :) .');

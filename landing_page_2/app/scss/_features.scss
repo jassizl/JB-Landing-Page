@@ -1,0 +1,50 @@
+.features {
+
+    &__grid {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    &__item {
+        padding: 0.9375rem;
+        flex: 1 
+        
+    
+    }
+
+    &__image {
+        flex: 5;
+        display: flex;
+        height: 700px;
+        justify-content: center;
+        align-items: center;
+        img {
+            display: flex;
+            
+            
+        }
+    }
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2.25rem;
+        img {
+        width: 200px;
+        height: auto;
+        
+
+        }
+        
+        
+
+    }
+
+    &__description {
+        text-align: center;
+        height: 10rem;
+
+    }
+}

@@ -1,0 +1,268 @@
+html {
+  font-size: 100;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 300;
+  color: hsl(205, 100%, 36%);
+  line-height: 1.4;
+}
+
+h1, h2, h3 {
+  margin-top: 50px;
+}
+
+h2 {
+  font-size: 1.55rem;
+}
+
+p {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+}
+
+.container--pall {
+  padding-top: 2.25rem;
+  padding-right: 1.5rem;
+  padding-bottom: 2.25rem;
+  padding-left: 1.5rem;
+}
+.container--py {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+.container--px {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+.container--pt {
+  padding-top: 2.25rem;
+}
+.container--pr {
+  padding-right: 1.5rem;
+}
+.container--pb {
+  padding-bottom: 2.25rem;
+}
+.container--pl {
+  padding-left: 1.5rem;
+}
+
+.flex {
+  display: flex;
+}
+.flex-jc-sb {
+  justify-content: space-between;
+}
+.flex-jc-sc {
+  justify-content: center;
+}
+.flex-ai-c {
+  align-items: center;
+}
+
+button, .button {
+  padding: 1rem 1.875rem;
+  background-color: hsl(358, 75%, 55%);
+  border: 0;
+  border-radius: 50px;
+  cursor: pointer;
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+}
+
+.header nav {
+  padding: 1.0625rem 1.5rem;
+}
+.header__links a {
+  position: relative;
+  font-size: 0.875rem;
+  color: hsl(205, 100%, 36%);
+  transition: color 200ms ease-in-out;
+}
+.header__links :not(:last-child) {
+  margin-right: 32px;
+}
+.header__links ::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 5px;
+  left: 0%;
+  right: 0%;
+  bottom: -10px;
+  background: hsl(358, 75%, 55%);
+}
+.header__links :hover {
+  color: hsl(358, 75%, 55%);
+}
+.header__links :hover ::before {
+  background: hsl(358, 75%, 55%);
+}
+.header__cta {
+  font-size: 0.875rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.hero__text {
+  text-align: center;
+}
+.hero__text h1 {
+  font-weight: 600;
+  font-size: 2.31rem;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+}
+.hero__text p {
+  line-height: 1.5;
+  margin-bottom: 2.25rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.features__grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.features__item {
+  padding: 0.9375rem;
+  flex: 1;
+}
+.features__image {
+  flex: 5;
+  display: flex;
+  height: 700px;
+  justify-content: center;
+  align-items: center;
+}
+.features__image img {
+  display: flex;
+}
+.features__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.25rem;
+}
+.features__title img {
+  width: 200px;
+  height: auto;
+}
+.features__description {
+  text-align: center;
+  height: 10rem;
+}
+
+.footer {
+  background: hsl(196, 67%, 45%);
+  color: hsl(205, 100%, 36%);
+  padding: 2.5rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 3fr;
+  grid-template-rows: 1fr auto;
+  grid-template-areas: "logo links1 links2 cta" "social links1 links2 copyright";
+  justify-items: start;
+  text-align: left;
+}
+.footer a {
+  color: hsl(0, 0%, 100%);
+}
+.footer__logo {
+  display: inline-block;
+  grid-area: logo;
+}
+.footer__social {
+  grid-area: social;
+  align-self: end;
+}
+.footer__social a {
+  display: inline-block;
+  height: 1.25rem;
+}
+.footer__social a:not(:last-child) {
+  margin-right: 1rem;
+}
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  font-size: 0.9375rem;
+}
+.footer__links.col1 {
+  grid-area: links1;
+}
+.footer__links.col2 {
+  grid-area: links2;
+}
+.footer__links a {
+  line-height: 2.25;
+}
+.footer__cta {
+  grid-area: cta;
+  text-align: right;
+  justify-self: end;
+}
+.footer__cta a.button {
+  display: inline-block;
+  color: hsl(0, 0%, 100%);
+}
+.footer__copyright {
+  color: hsl(0, 0%, 96%);
+  font-size: 0.6125;
+  align-self: end;
+  justify-self: end;
+  grid-area: copyright;
+}
+
+.support {
+  display: flex;
+  align-items: center;
+}
+.support__image {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  background-image: url("../../assets/images/HNEMPLOYEE-01.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right right;
+  min-height: 41rem;
+  flex: 1;
+  order: 2;
+}
+.support__text {
+  text-align: left;
+  flex: 1;
+  order: 1;
+  margin-bottom: 2.25rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+.support__text h1 {
+  font-weight: 800;
+  font-size: 2.31rem;
+  line-height: 1;
+  color: hsl(205, 100%, 36%);
+  margin-bottom: 1.5rem;
+}
+.support__text p {
+  line-height: 1.5;
+  margin-bottom: 5.25rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}/*# sourceMappingURL=style.css.map */

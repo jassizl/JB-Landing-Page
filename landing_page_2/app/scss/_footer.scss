@@ -1,0 +1,90 @@
+.footer {
+
+    background: $lightblue;
+    color: $mainblue;
+    padding: 2.5rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 3fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: 
+        "logo links1 links2 cta"
+        "social links1 links2 copyright";
+    justify-items: start;
+    text-align: left;
+    
+
+    a {
+        color: $mainwhite;
+    }
+
+
+    &__logo {
+        display: inline-block;
+        grid-area: logo;
+
+    }
+
+    
+    &__social {
+        
+        grid-area: social;
+        align-self: end;
+
+        a {
+            display: inline-block;
+            height: 1.25rem;
+        }
+
+        a:not(:last-child) {
+            margin-right: 1rem;
+        }
+
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        font-size: 0.9375rem;
+        
+
+        &.col1 {
+            grid-area: links1;
+
+        }
+
+        &.col2 {
+            
+            grid-area: links2;
+        }
+
+        a {
+            line-height: 2.25;
+            
+        }
+    }
+
+    &__cta {
+        grid-area: cta;
+        text-align: right;
+        justify-self: end;
+
+        a.button {
+            display: inline-block;  
+            color: $mainwhite;
+
+        }
+
+    }
+
+    &__copyright {
+        color: $maingrey;
+        font-size: 0.6125;
+        align-self: end;
+        justify-self: end;
+        grid-area: copyright;
+        
+
+    }
+}

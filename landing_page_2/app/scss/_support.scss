@@ -1,0 +1,46 @@
+.support {
+    display: flex;
+    align-items: center;
+    
+
+    &__image {
+       
+       position: relative;
+       height: 100%;
+       width: 50%;
+       background-image: url('../../assets/images/HNEMPLOYEE-01.png');
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-position: right right;
+       min-height: 41rem;
+       flex: 1;
+       order: 2;
+
+    
+    }
+
+    &__text {
+        text-align: left;
+        flex: 1;
+        order: 1;
+        margin-bottom: 2.25rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+
+        h1 {
+            font-weight: 800;
+            font-size: 2.31rem;
+            line-height: 1;
+            color: $mainblue;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            line-height: 1.5;
+            margin-bottom: 5.25rem;
+            margin-left: 5rem;
+            margin-right: 5rem;
+        }
+    }
+    
+}

@@ -1,0 +1,57 @@
+.header {
+
+    
+
+    nav {
+        padding: 1.0625rem 1.5rem;
+        
+    }
+
+
+
+    &__links {
+
+        a{
+            position: relative;
+            font-size: 0.875rem;
+            color: $mainblue;
+            transition: color 200ms ease-in-out;
+            
+        }
+        
+
+       
+        :not(:last-child){
+            margin-right: 32px;
+        }
+
+        ::before {
+            content: "";
+            display: block;
+            position: absolute;
+            height: 5px;
+            left: 0%;
+            right: 0%;
+            bottom: -10px;
+            background: $mainred;
+        }
+
+        :hover {
+            color: $mainred;
+
+            ::before {
+                background: $mainred;
+            }
+        }
+    }
+
+    
+    &__cta {
+        font-size: 0.875rem;
+        color: $mainwhite;
+    }
+
+
+    
+
+}       
